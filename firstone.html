@@ -189,7 +189,7 @@
 
 		{block:HasItems}
 		<section class="item_list clearfix">
-			{block:Items}
+			{block:Items}<!--ここからホーム、この部分は各々ブロック-->
 			<li>
 				<div class="item-box {block:ItemNowOnSale}{block:NoItemStock}item-box--soldout{/block:NoItemStock}{/block:ItemNowOnSale} {block:ItemEndOfSale}item-box--soldout{/block:ItemEndOfSale}">
 					{block:AppsItemLabel}
@@ -286,11 +286,11 @@
 		</script>
 		{/block:IndexPage}
 
-		{block:ItemPage}
+		{block:ItemPage}<!--ここから商品のページ-->
 		<div id="item_page_wrap">
 			{IllegalReportMessageTag}
 			<section class="radius_box">
-				<div id="first_column">
+				<div id="first_column"><!--first columnは左側-->
 					<ul class="bxslider">
 						<li><div class="img_box">
 
@@ -343,7 +343,7 @@
 					</div>
 				</div>
 
-				<div id="second_column">
+				<div id="second_column"><!--second columnは右側-->
 					<h1 class="item_title">{ItemTitle}{block:AppsDownload}{block:ItemDigitalContent}({ItemDigitalContent}){/block:ItemDigitalContent}{/block:AppsDownload}</h1>
 
 					<div class="item_priceArea {block:ItemNowOnSale}{block:NoItemStock}item_priceArea--soldOut{/block:NoItemStock}{/block:ItemNowOnSale} {block:ItemEndOfSale}item_priceArea--soldOut{/block:ItemEndOfSale}">
